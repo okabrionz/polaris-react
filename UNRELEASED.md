@@ -7,6 +7,7 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 ### Enhancements
 
 - Add `variableHeight` prop to `DropZone` so children control its height ([#4136](https://github.com/Shopify/polaris-react/pull/4136))
+- Add `last` prop to `IndexTable.Cell` to create a sticky last cell on viewports larger than small ([#4150](https://github.com/Shopify/polaris-react/pull/4150))
 
 ### Bug fixes
 
