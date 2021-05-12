@@ -68,7 +68,7 @@ export function Sheet({
     if (activatorElement) {
       requestAnimationFrame(() => focusFirstFocusableNode(activatorElement));
     }
-  }, [activator]);
+  }, [activator, onClose]);
 
   const activatorMarkup =
     activator && !isRef(activator) ? (

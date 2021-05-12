@@ -2,11 +2,10 @@ import React, {useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 // eslint-disable-next-line no-restricted-imports
 import {mountWithAppProvider} from 'test-utilities/legacy';
-import {Backdrop} from 'components/Backdrop';
+import {Backdrop, Button} from 'components';
+import {mountWithApp} from 'test-utilities';
 
 import {Sheet} from '../Sheet';
-import {Button} from 'components';
-import {mountWithApp} from 'test-utilities';
 
 describe('<Sheet />', () => {
   const mockProps = {
