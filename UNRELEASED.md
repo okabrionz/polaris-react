@@ -6,6 +6,8 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Enhancements
 
+- Added support for sectioned options in `Autocomplete` [#4221](https://github.com/Shopify/polaris-react/pull/4221)
+
 ### Bug fixes
 
 - `IndexTable` Remove parent resource name from bulk select action ([#4013](https://github.com/Shopify/polaris-react/pull/4013))
