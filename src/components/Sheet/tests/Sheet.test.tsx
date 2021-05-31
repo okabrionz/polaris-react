@@ -5,6 +5,7 @@ import {mountWithAppProvider} from 'test-utilities/legacy';
 import {Backdrop, Button} from 'components';
 import {mountWithApp} from 'test-utilities';
 
+// eslint-disable-next-line import/no-deprecated
 import {Sheet} from '../Sheet';
 
 describe('<Sheet />', () => {

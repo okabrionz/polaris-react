@@ -45,6 +45,7 @@ export interface SheetProps {
   activator?: React.RefObject<HTMLElement> | React.ReactElement;
 }
 
+/** @deprecated Use <Modal /> instead or avoid modal patterns all together. */
 export function Sheet({
   children,
   open,
@@ -74,6 +75,13 @@ export function Sheet({
     activator && !isRef(activator) ? (
       <div ref={activatorRef}>{activator}</div>
     ) : null;
+
+  if (process.env.NODE_ENV === 'development') {
+    // eslint-disable-next-line no-console
+    console.warn(
+      'Deprecation: <Sheet /> is deprecated. This component might be removed in a future major version of Polaris. Use <Modal /> instead or avoid modal patterns all together.',
+    );
+  }
 
   return (
     <>
